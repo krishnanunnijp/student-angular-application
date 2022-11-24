@@ -6,15 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { StudentViewComponent } from './student-view/student-view.component';
+import { StudentSearchComponent } from './student-search/student-search.component';
+import { StudentnavbarComponent } from './studentnavbar/studentnavbar.component';
 
 const myRouter:Routes=[
   {
     path: "",
     component: StudentEntryComponent
     
-  },  {
-    path: "search",
+  },
+  {
+    path: "view",
     component: StudentViewComponent
+    
+  },
+  {
+    path: "search",
+    component: StudentSearchComponent
     
   }
 
@@ -25,7 +33,9 @@ const myRouter:Routes=[
   declarations: [
     AppComponent,
     StudentEntryComponent,
-    StudentViewComponent
+    StudentViewComponent,
+    StudentSearchComponent,
+    StudentnavbarComponent
   ],
   imports: [
     BrowserModule,
