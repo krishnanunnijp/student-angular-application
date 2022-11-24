@@ -8,6 +8,7 @@ import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { StudentViewComponent } from './student-view/student-view.component';
 import { StudentSearchComponent } from './student-search/student-search.component';
 import { StudentnavbarComponent } from './studentnavbar/studentnavbar.component';
+import { StudentDeleteComponent } from './student-delete/student-delete.component';
 
 const myRouter:Routes=[
   {
@@ -24,6 +25,11 @@ const myRouter:Routes=[
     path: "search",
     component: StudentSearchComponent
     
+  },
+  {
+    path: "delete",
+    component: StudentDeleteComponent
+    
   }
 
 
@@ -35,7 +41,8 @@ const myRouter:Routes=[
     StudentEntryComponent,
     StudentViewComponent,
     StudentSearchComponent,
-    StudentnavbarComponent
+    StudentnavbarComponent,
+    StudentDeleteComponent
   ],
   imports: [
     BrowserModule,
