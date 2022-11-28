@@ -9,6 +9,7 @@ import { StudentViewComponent } from './student-view/student-view.component';
 import { StudentSearchComponent } from './student-search/student-search.component';
 import { StudentnavbarComponent } from './studentnavbar/studentnavbar.component';
 import { StudentDeleteComponent } from './student-delete/student-delete.component';
+import { FormsModule } from '@angular/forms';
 
 const myRouter:Routes=[
   {
@@ -47,7 +48,8 @@ const myRouter:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRouter)
+    RouterModule.forRoot(myRouter),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
